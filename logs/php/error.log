@@ -1,0 +1,222 @@
+[14-Apr-2023 18:21:13 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:32:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'local.wp_options' doesn't exist in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php:2007
+Stack trace:
+#0 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2007): mysqli_query(Object(mysqli), 'SELECT option_n...')
+#1 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(1895): wpdb->_do_query('SELECT option_n...')
+#2 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2579): wpdb->query('SELECT option_n...')
+#3 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/option.php(202): wpdb->get_results('SELECT option_n...')
+#4 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/functions.php(1530): wp_load_alloptions()
+#5 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/load.php(607): is_blog_installed()
+#6 /Users/zaguini/Local Sites/testzaguini/app/public/wp-settings.php(155): wp_not_installed()
+#7 /Users/zaguini/Local Sites/testzaguini/app/public/wp-config.php(93): require_once('/Users/zaguini/...')
+#8 /Users/zaguini/Local Sites/testzaguini/app/public/wp-load.php(37): require_once('/Users/zaguini/...')
+#9 /Users/zaguini/Local Sites/testzaguini/app/public/wp-admin/admin.php(34): require_once('/Users/zaguini/...')
+#10 /Users/zaguini/Local Sites/testzaguini/app/public/wp-admin/index.php(10): require_once('/Users/zaguini/...')
+#11 {main}
+  thrown in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php on line 2007
+[14-Apr-2023 18:32:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'local.wp_options' doesn't exist in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php:2007
+Stack trace:
+#0 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2007): mysqli_query(Object(mysqli), 'SELECT option_n...')
+#1 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(1895): wpdb->_do_query('SELECT option_n...')
+#2 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2579): wpdb->query('SELECT option_n...')
+#3 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/option.php(202): wpdb->get_results('SELECT option_n...')
+#4 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/functions.php(1530): wp_load_alloptions()
+#5 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/load.php(607): is_blog_installed()
+#6 /Users/zaguini/Local Sites/testzaguini/app/public/wp-settings.php(155): wp_not_installed()
+#7 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1336): require('/Users/zaguini/...')
+#8 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/eval-command/src/Eval_Command.php(36): WP_CLI\Runner->load_wordpress()
+#9 [internal function]: Eval_Command->__invoke(Array, Array)
+#10 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php(100): call_user_func(Array, Array, Array)
+#11 [internal function]: WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}(Array, Array)
+#12 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php(491): call_user_func(Object(Closure), Array, Array)
+#13 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(419): WP_CLI\Dispatcher\Subcommand->invoke(Array, Array, Array)
+#14 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(442): WP_CLI\Runner->run_command(Array, Array)
+#15 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(125): WP_CLI\Runner->run_command_and_exit()
+#16 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1189): WP_CLI\Runner->do_early_invoke('before_wp_load')
+#17 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\Runner->start()
+#18 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php(78): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#19 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php(32): WP_CLI\bootstrap()
+#20 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php(11): include('phar:///Applica...')
+#21 /Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar(4): include('phar:///Applica...')
+#22 {main}
+  thrown in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php on line 2007
+[14-Apr-2023 18:32:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'local.wp_options' doesn't exist in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php:2007
+Stack trace:
+#0 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2007): mysqli_query(Object(mysqli), 'SELECT option_n...')
+#1 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(1895): wpdb->_do_query('SELECT option_n...')
+#2 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2579): wpdb->query('SELECT option_n...')
+#3 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/option.php(202): wpdb->get_results('SELECT option_n...')
+#4 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/functions.php(1530): wp_load_alloptions()
+#5 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/load.php(607): is_blog_installed()
+#6 /Users/zaguini/Local Sites/testzaguini/app/public/wp-settings.php(155): wp_not_installed()
+#7 /Users/zaguini/Local Sites/testzaguini/app/public/wp-config.php(93): require_once('/Users/zaguini/...')
+#8 /Users/zaguini/Local Sites/testzaguini/app/public/wp-load.php(37): require_once('/Users/zaguini/...')
+#9 /Users/zaguini/Local Sites/testzaguini/app/public/wp-admin/admin.php(34): require_once('/Users/zaguini/...')
+#10 /Users/zaguini/Local Sites/testzaguini/app/public/wp-admin/index.php(10): require_once('/Users/zaguini/...')
+#11 {main}
+  thrown in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php on line 2007
+[14-Apr-2023 18:32:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'local.wp_options' doesn't exist in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php:2007
+Stack trace:
+#0 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2007): mysqli_query(Object(mysqli), 'SELECT option_n...')
+#1 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(1895): wpdb->_do_query('SELECT option_n...')
+#2 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2579): wpdb->query('SELECT option_n...')
+#3 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/option.php(202): wpdb->get_results('SELECT option_n...')
+#4 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/functions.php(1530): wp_load_alloptions()
+#5 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/load.php(607): is_blog_installed()
+#6 /Users/zaguini/Local Sites/testzaguini/app/public/wp-settings.php(155): wp_not_installed()
+#7 /Users/zaguini/Local Sites/testzaguini/app/public/wp-config.php(93): require_once('/Users/zaguini/...')
+#8 /Users/zaguini/Local Sites/testzaguini/app/public/wp-load.php(37): require_once('/Users/zaguini/...')
+#9 /Users/zaguini/Local Sites/testzaguini/app/public/wp-blog-header.php(13): require_once('/Users/zaguini/...')
+#10 /Users/zaguini/Local Sites/testzaguini/app/public/index.php(17): require('/Users/zaguini/...')
+#11 {main}
+  thrown in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php on line 2007
+[14-Apr-2023 18:33:23 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:33:23 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:33:23 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:33:23 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'local.wp_options' doesn't exist in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php:2007
+Stack trace:
+#0 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2007): mysqli_query(Object(mysqli), 'SELECT option_n...')
+#1 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(1895): wpdb->_do_query('SELECT option_n...')
+#2 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2579): wpdb->query('SELECT option_n...')
+#3 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/option.php(202): wpdb->get_results('SELECT option_n...')
+#4 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/functions.php(1530): wp_load_alloptions()
+#5 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/load.php(607): is_blog_installed()
+#6 /Users/zaguini/Local Sites/testzaguini/app/public/wp-settings.php(155): wp_not_installed()
+#7 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1336): require('/Users/zaguini/...')
+#8 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/eval-command/src/Eval_Command.php(36): WP_CLI\Runner->load_wordpress()
+#9 [internal function]: Eval_Command->__invoke(Array, Array)
+#10 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php(100): call_user_func(Array, Array, Array)
+#11 [internal function]: WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}(Array, Array)
+#12 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php(491): call_user_func(Object(Closure), Array, Array)
+#13 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(419): WP_CLI\Dispatcher\Subcommand->invoke(Array, Array, Array)
+#14 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(442): WP_CLI\Runner->run_command(Array, Array)
+#15 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(125): WP_CLI\Runner->run_command_and_exit()
+#16 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1189): WP_CLI\Runner->do_early_invoke('before_wp_load')
+#17 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\Runner->start()
+#18 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php(78): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#19 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php(32): WP_CLI\bootstrap()
+#20 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php(11): include('phar:///Applica...')
+#21 /Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar(4): include('phar:///Applica...')
+#22 {main}
+  thrown in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php on line 2007
+[14-Apr-2023 18:50:57 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:57 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:57 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[14-Apr-2023 18:50:57 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:09:47 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:09:47 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:09:47 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:09:48 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:09:48 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:09:48 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:09:48 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:09:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'local.wp_options' doesn't exist in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php:2007
+Stack trace:
+#0 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2007): mysqli_query(Object(mysqli), 'SELECT option_n...')
+#1 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(1895): wpdb->_do_query('SELECT option_n...')
+#2 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2579): wpdb->query('SELECT option_n...')
+#3 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/option.php(202): wpdb->get_results('SELECT option_n...')
+#4 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/functions.php(1530): wp_load_alloptions()
+#5 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/load.php(607): is_blog_installed()
+#6 /Users/zaguini/Local Sites/testzaguini/app/public/wp-settings.php(155): wp_not_installed()
+#7 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1336): require('/Users/zaguini/...')
+#8 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/eval-command/src/Eval_Command.php(36): WP_CLI\Runner->load_wordpress()
+#9 [internal function]: Eval_Command->__invoke(Array, Array)
+#10 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php(100): call_user_func(Array, Array, Array)
+#11 [internal function]: WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}(Array, Array)
+#12 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php(491): call_user_func(Object(Closure), Array, Array)
+#13 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(419): WP_CLI\Dispatcher\Subcommand->invoke(Array, Array, Array)
+#14 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(442): WP_CLI\Runner->run_command(Array, Array)
+#15 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(125): WP_CLI\Runner->run_command_and_exit()
+#16 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1189): WP_CLI\Runner->do_early_invoke('before_wp_load')
+#17 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\Runner->start()
+#18 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php(78): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#19 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php(32): WP_CLI\bootstrap()
+#20 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php(11): include('phar:///Applica...')
+#21 /Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar(4): include('phar:///Applica...')
+#22 {main}
+  thrown in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php on line 2007
+[07-Jul-2023 18:10:04 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:10:10 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:10:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'local.wp_options' doesn't exist in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php:2007
+Stack trace:
+#0 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2007): mysqli_query(Object(mysqli), 'SELECT option_n...')
+#1 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(1895): wpdb->_do_query('SELECT option_n...')
+#2 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2579): wpdb->query('SELECT option_n...')
+#3 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/option.php(202): wpdb->get_results('SELECT option_n...')
+#4 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/functions.php(1530): wp_load_alloptions()
+#5 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/load.php(607): is_blog_installed()
+#6 /Users/zaguini/Local Sites/testzaguini/app/public/wp-settings.php(155): wp_not_installed()
+#7 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1336): require('/Users/zaguini/...')
+#8 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/eval-command/src/Eval_Command.php(36): WP_CLI\Runner->load_wordpress()
+#9 [internal function]: Eval_Command->__invoke(Array, Array)
+#10 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php(100): call_user_func(Array, Array, Array)
+#11 [internal function]: WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}(Array, Array)
+#12 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php(491): call_user_func(Object(Closure), Array, Array)
+#13 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(419): WP_CLI\Dispatcher\Subcommand->invoke(Array, Array, Array)
+#14 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(442): WP_CLI\Runner->run_command(Array, Array)
+#15 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(125): WP_CLI\Runner->run_command_and_exit()
+#16 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1189): WP_CLI\Runner->do_early_invoke('before_wp_load')
+#17 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\Runner->start()
+#18 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php(78): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#19 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php(32): WP_CLI\bootstrap()
+#20 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php(11): include('phar:///Applica...')
+#21 /Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar(4): include('phar:///Applica...')
+#22 {main}
+  thrown in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php on line 2007
+[07-Jul-2023 18:10:10 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:14:14 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:14:14 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:14:14 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:14:14 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/script-loader.php on line 757
+[07-Jul-2023 18:14:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'local.wp_options' doesn't exist in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php:2007
+Stack trace:
+#0 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2007): mysqli_query(Object(mysqli), 'SELECT option_n...')
+#1 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(1895): wpdb->_do_query('SELECT option_n...')
+#2 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2579): wpdb->query('SELECT option_n...')
+#3 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/option.php(202): wpdb->get_results('SELECT option_n...')
+#4 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/functions.php(1530): wp_load_alloptions()
+#5 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/load.php(607): is_blog_installed()
+#6 /Users/zaguini/Local Sites/testzaguini/app/public/wp-settings.php(155): wp_not_installed()
+#7 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1336): require('/Users/zaguini/...')
+#8 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/eval-command/src/Eval_Command.php(36): WP_CLI\Runner->load_wordpress()
+#9 [internal function]: Eval_Command->__invoke(Array, Array)
+#10 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php(100): call_user_func(Array, Array, Array)
+#11 [internal function]: WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}(Array, Array)
+#12 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php(491): call_user_func(Object(Closure), Array, Array)
+#13 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(419): WP_CLI\Dispatcher\Subcommand->invoke(Array, Array, Array)
+#14 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(442): WP_CLI\Runner->run_command(Array, Array)
+#15 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(125): WP_CLI\Runner->run_command_and_exit()
+#16 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1189): WP_CLI\Runner->do_early_invoke('before_wp_load')
+#17 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\Runner->start()
+#18 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php(78): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#19 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php(32): WP_CLI\bootstrap()
+#20 phar:///Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php(11): include('phar:///Applica...')
+#21 /Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/wp-cli.phar(4): include('phar:///Applica...')
+#22 {main}
+  thrown in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php on line 2007
+[07-Jul-2023 18:14:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'local.wp_options' doesn't exist in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php:2007
+Stack trace:
+#0 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2007): mysqli_query(Object(mysqli), 'SELECT option_n...')
+#1 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(1895): wpdb->_do_query('SELECT option_n...')
+#2 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php(2579): wpdb->query('SELECT option_n...')
+#3 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/option.php(202): wpdb->get_results('SELECT option_n...')
+#4 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/functions.php(1530): wp_load_alloptions()
+#5 /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/load.php(607): is_blog_installed()
+#6 /Users/zaguini/Local Sites/testzaguini/app/public/wp-settings.php(155): wp_not_installed()
+#7 /Users/zaguini/Local Sites/testzaguini/app/public/wp-config.php(93): require_once('/Users/zaguini/...')
+#8 /Users/zaguini/Local Sites/testzaguini/app/public/wp-load.php(37): require_once('/Users/zaguini/...')
+#9 /Users/zaguini/Local Sites/testzaguini/app/public/wp-admin/admin.php(34): require_once('/Users/zaguini/...')
+#10 /Users/zaguini/Local Sites/testzaguini/app/public/wp-admin/index.php(10): require_once('/Users/zaguini/...')
+#11 {main}
+  thrown in /Users/zaguini/Local Sites/testzaguini/app/public/wp-includes/wp-db.php on line 2007
